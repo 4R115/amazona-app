@@ -11,7 +11,7 @@ body{
   -moz-osx-font-smoothing: grayscale;
 }
 
-#root{
+#root {
   height: 100%;
 }
 
@@ -105,7 +105,4 @@ img.medium {
 .rating span {
   color: #f0c040;
   margin: 0.1rem;
-}
-.rating span:last-child{
-  color: #404040
 }
