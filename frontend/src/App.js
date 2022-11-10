@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
 
@@ -18,10 +18,12 @@ function App() {
             <a href="/signin">Sign In</a>
           </div>
         </header>
-        <main>
-          <Route path="/product/:id" component={ProductScreen}></Route>
-          <Route path="/" component={HomeScreen} exact></Route>
-        </main>
+          <main>
+            <Routes>
+              <Route path="/product/:id" element={<ProductScreen/>}></Route>
+              <Route path="/" element={<HomeScreen />} exact></Route>
+            </Routes>
+          </main>
         <footer className="row center">All right reserved</footer>
       </div>
     </BrowserRouter>
