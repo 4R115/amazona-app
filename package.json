@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/4R115/amazona-app#readme",
   "devDependencies": {
+    "eslint": "^8.27.0",
+    "eslint-plugin-react": "^7.31.10",
     "nodeman": "^1.1.2"
   }
 }
